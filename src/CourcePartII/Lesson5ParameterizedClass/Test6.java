@@ -1,4 +1,4 @@
-package CourcePartII.Lesson5Parameterized;
+package CourcePartII.Lesson5ParameterizedClass;
 
 public class Test6 {
     public static void main(String[] args) {
