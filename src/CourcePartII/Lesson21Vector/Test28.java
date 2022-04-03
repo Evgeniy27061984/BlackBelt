@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class Test28 {
     public static void main(String[] args) {
-        Vector<String> vector = new Vector<>();
+        Vector<String> vector = new Vector<>();//class synchronized
         vector.add("Alex");
         vector.add("Maxim");
         vector.add("Alina");
