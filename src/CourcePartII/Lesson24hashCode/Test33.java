@@ -17,9 +17,12 @@ public class Test33 {
         System.out.println("result = " + result);
 
         System.out.println(st1.hashCode());//105
+        for(Map.Entry<Student2,Double> entry: map.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+            //map.entrySet() дает возможность использовать entry.getKey() + " " + entry.getValue()
+        }
 
-
-
+        System.out.println(map.entrySet());
     }
 }
 
