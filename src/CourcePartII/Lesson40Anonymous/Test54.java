@@ -37,9 +37,7 @@ public class Test54 {
         };
 
         System.out.println(m3.doOperation(2,3));
-
     }
-
 }
 
 interface Math3 {
