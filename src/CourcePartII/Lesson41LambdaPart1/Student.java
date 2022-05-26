@@ -1,4 +1,4 @@
-package CourcePartII.Lesson41LyamdaPart1;
+package CourcePartII.Lesson41LambdaPart1;
 
 public class Student {
     String name;

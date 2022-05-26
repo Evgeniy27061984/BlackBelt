@@ -1,4 +1,4 @@
-package CourcePartII.Lesson41LyamdaPart1;
+package CourcePartII.Lesson41LambdaPart1;
 
 public class Test57 {
     static  void def (I i) {
