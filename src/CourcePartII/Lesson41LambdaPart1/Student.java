@@ -1,11 +1,11 @@
 package CourcePartII.Lesson41LambdaPart1;
 
 public class Student {
-    String name;
-    char sex;
-    int age;
-    int course;
-    double avgGrade;
+   public String name;
+    public char sex;
+    public int age;
+    public int course;
+    public double avgGrade;
 
     public Student(String name, char sex, int age, int course, double avgGrade) {
         this.name = name;
