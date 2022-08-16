@@ -5,6 +5,7 @@ public class Test107 {
         System.out.println("Main thread start");
         InterruptedThread thread = new InterruptedThread();
         thread.start();
+
         Thread.sleep(2000);
         //interruptedThread.stop();// не используется
         thread.interrupt();
