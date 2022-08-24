@@ -1,17 +1,21 @@
-package CourcePartII.Lesson80CallableFuture1Part;
+package CourcePartII.Lesson81CallableFuture2Part;
 
 import java.util.concurrent.*;
 
-public class Test115 {
+public class Test116 {
     static int factorialResult;
 
     public static void main(String[] args)  {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         Factorial2 factorial2 = new Factorial2(5);
         Future<Integer> future = executorService.submit(factorial2);
-        try {
-            factorialResult = future.get();
 
+        try {
+            System.out.println( future.isDone());
+            System.out.println("want get result");
+            factorialResult = future.get();//wait while task work
+            System.out.println("get result");
+            System.out.println( future.isDone());
         }
         catch (InterruptedException e) {
             e.printStackTrace();
@@ -43,8 +47,8 @@ class Factorial2 implements Callable<Integer> {
 
         for (int i = 1; i <= f; i++) {
             result*=i;
+            Thread.sleep(1000);
         }
-
         return result;
     }
 }
